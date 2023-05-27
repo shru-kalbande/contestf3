@@ -1,0 +1,296 @@
+html {
+  scroll-behavior: smooth;
+}
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color and text color for the body */
+body {
+  background-color: #cecdcd;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFA500;
+  padding: 20px;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+  border: #f44336 solid;
+  background-color: #333;
+}
+.home {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Social Icons */
+.social-icons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-icons li {
+  margin-left: 10px;
+}
+
+/* Main Content Section */
+#main-content {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./img/pizza.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.content-info {
+  text-align: center;
+  color: #fff;
+}
+
+.content-info h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.content-info p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.content-info a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff5722;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.content-info a:hover {
+  background-color: #FFD580;
+}
+
+.contact-info p {
+  font-size: 16px;
+}
+
+/* About Us Section */
+#about-us {
+  padding: 80px 30px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  background-color: #fffdd0;
+}
+
+#about-us .about {
+  grid-column: 1 / 2;
+}
+
+#about-us .about-image {
+  grid-column: 2 / 3;
+  
+}
+
+#about-us h2 {
+  font-size: 30px;
+  margin-left: 50px;
+  padding-bottom: 20px;
+}
+
+#about-us p {
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+#about-us img {
+  max-width: 50%;
+  margin-left: 50%;
+}
+/* Menu Section */
+#menu {
+  padding: 80px 30%;
+  text-align: center;
+  background-color: #fffdd0;
+}
+
+#menu h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#menu p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.menu-item {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+  max-height: 150px;
+}
+
+.menu-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.menu-item p {
+  font-size: 16px;
+  padding: 0 20px 20px;
+  text-align: center;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Find Us Section */
+#find-us {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fffdd0;;
+}
+
+#find-us p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.map {
+  position: relative;
+  width: 50%;
+  padding-bottom: 60%;
+  margin-bottom: 40px;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+}
+
+.contact-info h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Responsive about-us */
+  #about-us {
+    flex-direction: column;
+  }
+
+  #about-us img {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  /* Responsive menu */
+  .menu-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    text-align: left;
+  }
+
+  /* Responsive find-us */
+  .map {
+    margin-bottom: 20px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+   flex-direction: column;
+  }
+
+}
